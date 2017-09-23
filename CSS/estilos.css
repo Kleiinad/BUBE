@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+	background: #000;
+    background: rgba(0,0,0,0.3)
+        
+}
+
+
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.logo a{
+    
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center   
+}
+
+.menu li {
+    font-size: 23px;
+    height: 50px;
+    font-family: fantasy
+    
+    
+    
+}
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 
+}
+
+/* despues de esta linea las configuraciones son para la resolucion menor a 768px */
+@media (max-width:760px) {
+    header label{
+        display: block;
+    
+    }
+    
+    leabel img{
+        justify-content: center;
+    }
+    
+    .menu {
+        position: absolute;
+        background: gray;
+        width: 30%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        
+    
+            
+    }
+    
+    .menu ul {
+        flex-direction: column;
+
+        
+    }
+    
+    .menu li {
+      
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    
+    .menu li a {
+        font-size: 23px;
+
+    }
+    
+    
+}
