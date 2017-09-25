@@ -1,113 +1,86 @@
-body {
-	margin: 0;
-	font-family: sans-serif;
-}
-
-header {
-    width: 100%;
-	background: #000;
-    background: rgba(0,0,0,0.3)
-        
-}
-
-
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
-header label:hover {
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
-}
-
-.logo a{
-    
-}
-
-.menu ul{
+body{
     margin: 0;
-    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center   
 }
-
-.menu li {
-    font-size: 23px;
-    height: 50px;
-    font-family: fantasy
-    
-    
-    
+.contenedor{
+    width: 1500px;
+    margin: 0 auto;
 }
-
-.menu li:hover {
-    background: rgba(0,0,0,0.3);
+header{  
+    background: -webkit-linear-gradient(left,#000000,#393939, #202020); 
+    background: -o-linear-gradient(right, #000000,#393939, #202020); 
+    background: -moz-linear-gradient(right, #000000,#393939, #202020);
+    padding-bottom: 10px;
 }
-
-.menu li a {
-    display: block;
-    padding: 10px 30px;
-    color: #fff;
+header a{
     text-decoration: none;
-    font-size: 24px;
-    
+    font-family: Anton, sans-serif;
+    color: #F2F2F2;
+    font-size: 25px;
 }
+header a:hover{
+    cursor: pointer;
+    color:#0075A0;
+}
+header>div>nav>div>a>img{
+    padding-top: 5px;
+}
+header>div>nav{
+    display:flex;
+    justify-content: center;
+}
+header>div>nav>div{
+    margin: 10px 40px 0;
+    display: inline-block;
+}
+/*seccion de noticias*/
+main{
+    background-image: url(../imagenes/back_city.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+/*fondo opaco*/
+div.blur{
 
-.fixed {
-    position: fixed;
+    margin: 100px;
+    background-color:rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 50px 0 30px 0;
+}
+/*contenido izquierdo*/
+.contl{
+    width: 450px;
+    display: inline-block;
+}
+/*contenido derecho*/
+.contr{
+    float: right;
+    width: 550px;
+    padding: 0 100px 0px 0px;
+}
+.contl img{
+    width: 300px;
+    padding-top: 20px;    
+}
+.contl p{
+    font-family: Anton;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+.contl>center>spam{
+    font-family: Didact Gothic Regular;
+    color: white;color: white;
+    font-size: 18px
+}
+/*texto bace*/
+.textbot{
     width: 100%;
-    top: 0;
-    left: 
+    float: left;
 }
-
-/* despues de esta linea las configuraciones son para la resolucion menor a 768px */
-@media (max-width:760px) {
-    header label{
-        display: block;
-    
-    }
-    
-    leabel img{
-        justify-content: center;
-    }
-    
-    .menu {
-        position: absolute;
-        background: gray;
-        width: 30%;
-        margin-left: -70%;
-        transition: all 0.5s;
-        
-    
-            
-    }
-    
-    .menu ul {
-        flex-direction: column;
-
-        
-    }
-    
-    .menu li {
-      
-    }
-    
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-    }
-    
-    .menu li a {
-        font-size: 23px;
-
-    }
-    
-    
+.textbot p{
+    font-family: Anton;
+    font-size: 58px;
+    color: white;
+    margin: 100px 0 0 0;
 }
