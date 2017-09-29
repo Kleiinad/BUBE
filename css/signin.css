@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+    
+}
+header{  
+    background: -webkit-linear-gradient(left,#000000,#393939, #202020); 
+    background: -o-linear-gradient(right, #000000,#393939, #202020); 
+    background: -moz-linear-gradient(right, #000000,#393939, #202020);
+    padding-bottom: 10px;
+    min-width: 863PX;
+}
+header a{
+    text-decoration: none;
+    font-family: Anton, sans-serif;
+    color: #F2F2F2;
+    font-size: 17px;
+}
+header a:hover{
+    cursor: pointer;
+    color:#0075A0;
+}
+header>nav>div>a>img{    
+    width: 57px;
+}
+header nav{
+    display:flex;
+    justify-content: center;
+}
+header>nav>div{
+    margin: 10px 50px 0;
+    display: inline-block;
+}
+/*seccion de noticias*/
+main{
+    background-image: url(../imagenes/fondo2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-width: 863PX;
+    height: 100%;
+    bottom: 0;
+}
+/*fondo opaco*/
+div.blur{
+    background-color:rgba(0, 0, 0, 0.68);
+    height: 600x;
+    margin: 3vw 5vw;
+    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.89);
+    width: 395px;
+    border-radius: 3px;
+    display: block;
+}
+.formulario{
+    padding: 0px 20px;
+    margin: 20px 20px 0;
+}
+.formulario img{
+    width: 110px;
+}
+.titulo{
+    font-family: anton;
+    color: white;
+    font-size: 40px;
+    margin: 0px 0 10px;
+    text-align: center;
+    font-weight: none;
+}
+.formuinput, formulabel{
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
+.tittle>span{
+    width: 70px;
+}
+.tittle{
+    display: inline-block;
+}
+.formuinput:hover{
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.6);
+}
+.formuinput{
+    padding: 10px 10px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-family: Didact Gothic Regular;
+    color: white;
+    width: 135px
+}
+.formulabel {
+    font-family: Didact Gothic Regular;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.formuinput:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+#correo{
+    width: 93%;
+}
+.sign{
+    margin-top: 10px;
+}
+div.selects {
+    width: auto;
+    display: inline-block;
+    margin-right: 1em;
+}
+div.radios {
+    width: auto;
+    display: inline-block;
+    font-family: Didact Gothic Regular;
+    color: white;
+}
+.formulario input[type="radio"]{
+    display:none;
+}
+.formulario .radios label{
+    color: white;
+    padding: 1px 5px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    cursor: pointer;
+    -webkit-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+.formulario .radios label:hover{
+    background: rgba(255, 255, 255, .1);
+}
+.formulario input[type="radio"]:checked + label{
+    padding: 1px 15px;
+    background:rgba(255, 255, 255, .8);
+    border-radius: 2px;
+    color: black;
+}
+.formulario span{
+    font-family: Didact Gothic Regular;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.formulario a{
+    font-family: Didact Gothic Regular;
+    color: #29ABE2;
+    text-align: center;
+    margin-left: 6px;
+    text-decoration: none;
+}
+.forumsumit{
+    border: 0;
+    padding: 10px 25px ;
+    font-family: anton;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 5px 0 45px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.formulario a:hover{
+    text-decoration: underline;   
+}
+.forumsumit:hover{
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.6); 
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+}
+span.bottom{
+    text-align: center;
+}
+div.selects>select{
+    font-family: Didact Gothic Regular;
+    border: 0;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);    
+}
+div.selects>select:hover{
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.6); 
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+}
+span.aviso{
+    font-size: 13px;
+    padding-top: 20px
+}
